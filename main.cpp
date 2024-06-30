@@ -57,23 +57,24 @@ int main()
         p2.print_resource();
         p3.print_resource();
 
-//     //p1
+        //p1
         play.rollDice();
         p1.placeRoad(play.getBoard(),42,43);
         p1.print_resource();
         p2.print_resource();
         p3.print_resource();
         p1.buyDevelopmentCard(play.get_cards()[0]);
-//      //play.get_cards()[0]->use_flag();
+        
+        play.get_cards()[0]->use_flag();// Victory Card is used: VictoryCard
         p1.printPoints();
         play.diffDevelopmentCard(&p1,0);
         p1.printPoints();
 
-    //p2
-     play.rollDice();
-     p1.print_resource();
-     p2.print_resource();
-     p3.print_resource();
+        //p2
+        play.rollDice();
+        p1.print_resource();
+        p2.print_resource();
+        p3.print_resource();
     
 
     //p3
